@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+  <script>
+    dayjs.extend(window.dayjs_plugin_relativeTime)
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+  <script>
+    dayjs.locale('pt-br')
+  </script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="topo">
+      <img src="./assets/Frame 7108.png" alt="">
+    </div>
+    <div class="container-formulario">
+      <p>Inscrição</p>
+      <div class="content-form">
+        <form id="form-inscricao">
+          <input id="nome" type="text" name="nome" required>
+          <input id="email" type="email" name="email" required>
+          <button>REALIZAR INSCRIÇÃO</button>
+        </form>
+      </div>
+    </div>
+    <h4>Participantes</h4>
+    <div class="container-table">
+      <table id="table-participante">
+        <thead>
+          <tr>
+            <th>Participante</th>
+            <th>Data de Inscrição</th>
+            <th>Data do check-in</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
